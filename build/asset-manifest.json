@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Barathkumarravichandran/movie/static/css/main.0c399a59.css",
+    "main.js": "/Barathkumarravichandran/movie/static/js/main.2fc42e79.js",
+    "static/js/453.01847bf5.chunk.js": "/Barathkumarravichandran/movie/static/js/453.01847bf5.chunk.js",
+    "index.html": "/Barathkumarravichandran/movie/index.html",
+    "main.0c399a59.css.map": "/Barathkumarravichandran/movie/static/css/main.0c399a59.css.map",
+    "main.2fc42e79.js.map": "/Barathkumarravichandran/movie/static/js/main.2fc42e79.js.map",
+    "453.01847bf5.chunk.js.map": "/Barathkumarravichandran/movie/static/js/453.01847bf5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0c399a59.css",
+    "static/js/main.2fc42e79.js"
+  ]
+}
