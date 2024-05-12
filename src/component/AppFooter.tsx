@@ -7,7 +7,7 @@ const AppFooter: React.FC = () => {
     const { Footer } = Layout;
     return (
 
-        <Footer style={{ textAlign: 'center' }}>
+        <Footer style={{ textAlign: 'center', background: "linear-gradient(to bottom, #222222, #1a1a1a)", color:'#fff' }}>
             Copyrights ©{new Date().getFullYear()} Created by Barathkumar
         </Footer>
     )

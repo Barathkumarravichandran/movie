@@ -10,21 +10,24 @@ const AppLayout: React.FC = () => {
     const { Content } = Layout;
 
     return (
-        <Layout style={{ height: '100%' }}>
-            {/* Header */}
-            <AppHeader />
-            {/* End of the header */}
+        <Layout style={{
+            minHeight: '100vh',
+            background: "linear-gradient(to bottom, #2c3e50, #1f2d3d)",
+        }}>
+            <Router>
+                {/* Header */}
+                <AppHeader />
+                {/* End of the header */}
 
-            {/* Body Content */}
-            <Content style={{ padding: '0 ,3rem' }}>
-                <Router>
+                {/* Body Content */}
+                <Content style={{ padding: '0 ,3rem' }}>
                     <AppRoutes />
-                </Router>
-            </Content>
-            {/* End of the body content */}
+                </Content>
+                {/* End of the body content */}
 
-            {/* Footer */}
-            <AppFooter />
+                {/* Footer */}
+                <AppFooter />
+            </Router>
             {/* End of the Footer */}
         </Layout>
     )

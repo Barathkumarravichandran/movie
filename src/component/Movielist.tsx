@@ -1,34 +1,22 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import axios from 'axios';
 
 interface Movie {
   '#IMDB_ID': string;
   '#TITLE': string;
   '#IMG_POSTER': string;
   '#RANK': number;
+  '#AKA': string;
+  '#ACTORS': string;
+  '#YEAR': number;
+  '#IMDB_URL': string;
 }
 
 interface Props {
-  searchText: string;
+  movies: Movie[];
 }
 
-const Movielist: React.FC<Props> = ({ searchText }) => {
-  const [movies, setMovies] = useState<Movie[]>([]);
-
-  useEffect(() => {
-    const fetchMovies = async () => {
-      try {
-        const response = await axios.get(`https://search.imdbot.workers.dev/?q=${searchText}`);
-        setMovies(response.data.description);
-      } catch (error) {
-        console.error('Error fetching data:', error);
-      }
-    };
-
-    fetchMovies();
-  }, [searchText]);
-
+const Movielist: React.FC<Props> = ({ movies }) => {
   return (
     <>
       {movies.map((movie: Movie) => (
